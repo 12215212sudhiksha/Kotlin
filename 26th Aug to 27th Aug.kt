@@ -131,4 +131,12 @@ fun main() {
     }
     while(i<=5)
 }
+//funcs
+fun demo(){
+    println("Hello, World!")
+}
+fun main(){
+    demo()
+    println("Byee")
+}
 
