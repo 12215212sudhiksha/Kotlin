@@ -51,6 +51,7 @@ fun main(){
 }
 
 //-----------------------------------------------------------------------------------------------------------
+//inheritance
 open class Rectangle(val a:Double, val b:Double){
     fun area():Double{
         return a* b
@@ -74,5 +75,38 @@ fun main(){
     mysquare.display()
     val myrectangle= Rectangle(4.0,5.0)
     myrectangle.display()
+    
+}
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+//3rd Sep
+//interface
+interface Shape{
+    fun area():Double
+        
+    }
+    open class Rectangle(val a: Double, val b:Double): Shape{
+        override fun area():Double{
+            return a*b
+        }
+        open fun display(){
+        println("area of rectangle us $a * $b is ${area()}")
+    }
+        
+    }
+   
+
+class Square(side:Double): Rectangle(side,side){
+    override fun display(){
+        println("area of square with side $a is ${area()}")
+    }
+}
+    
+
+fun main(){
+    val myrectangle= Rectangle(4.0,5.0)
+    myrectangle.display()
+    val mysquare= Square(4.0)
+    mysquare.display()
+    
     
 }
