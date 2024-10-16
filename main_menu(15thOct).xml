@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="settings"
+        android:id="@+id/i1"
+        android:icon="@drawable/img_1"
+        app:showAsAction="collapseActionView"
+
+        />
+    <item
+        android:title="about Phone"
+        android:id="@+id/i2"
+        android:icon="@drawable/img_2"
+        app:showAsAction="collapseActionView"
+
+        />
+    <item
+        android:title="apps"
+        android:id="@+id/i3"
+        android:icon="@drawable/img_3"
+        app:showAsAction="always"
+
+        />
+    <item
+        android:title="hotspot"
+        android:id="@+id/i4"
+        android:icon="@drawable/img_4"
+        app:showAsAction="always"
+
+        />
+
+
+</menu>
